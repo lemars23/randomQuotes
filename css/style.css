@@ -3,3 +3,86 @@
 *::before {
     box-sizing: border-box;
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    height: calc(98vh + 19px);
+    width: calc(98vw + 38px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: bisque;
+}
+
+.wrapper-blockQuote {
+    width: 70%;
+}
+
+.wrapper-quote {
+    font-family: "Caveat", cursive;
+    font-size: 3em;
+}
+
+.wrapper-author {
+    display: block;
+    font-family: "Merriweather", serif;
+    font-size: 1.2em;
+    text-rendering: geometricPrecision;
+    text-align: right;
+}
+
+.wrapper-btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 15%;
+    height: 7%;
+
+    margin-top: 3%;
+
+    background-color: #deb887;
+    color: #fff;
+    font-weight: 800;
+    font-size: 1em;
+
+    border-radius: 10px;
+
+    box-shadow: 2px 2px #888888;
+}
+
+.wrapper-btn-link:hover {
+    width: 16%;
+    height: 8%;
+
+    font-size: 1.1em;
+
+    margin: 5%;
+
+    transition: all 0.5s linear;
+}
+
+.wrapper-btn-link:not(:hover) {
+    transition: all 0.5s linear;
+}
+
+.wrapper-btn-newQuote {
+    display: inline-block;
+}
